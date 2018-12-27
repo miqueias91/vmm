@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body {
     background-color: #fff;
 	font-family: loraregular, 'Open Sans', serif;
@@ -6,16 +9,16 @@ body {
     padding-left: 8rem;
     position: relative;
 }
+h1, h2, h3, h4, h5, h6 {
+    font-family: cinzel, serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
 h2 {
     font-size: 3.5rem;
 }
 h3 {
     font-size: 1.70rem;
-}
-h1, h2, h3, h4, h5, h6 {
-    font-family: cinzel, serif;
-    font-weight: 700;
-    text-transform: uppercase;
 }
 header {
 	position: fixed;
@@ -37,7 +40,6 @@ header .li-ul-menu a:hover {
 i {
 	font-size: 15px;
 }
-
 .nav-link.active .fa-circle-thin:before {
     content: "\f111";
 }
@@ -51,9 +53,6 @@ i {
 	border-radius: 3px;
 	display: none;
 	background-color: #164C2A!important;
-}
-.ativo {
-	border-bottom: 2px solid #164C2A!important;
 }
 #sideNavDesktop {
     text-align: center;
@@ -73,24 +72,23 @@ i {
     margin-bottom: auto;
     flex-basis: auto;
 }
-.li-ul-main a:hover {
-	border-bottom: 2px solid #164C2A!important;
-}
 .navbar-nav .nav-link {
     color: #fff;
 }
 .li-ul-main {
     font-size: 0.95em;
     text-shadow: 0px 1px 2px black;
-    padding: 0;
     margin: .5rem;
-    padding-bottom: 2px;
 }
-.nav-link-lateral {
-	padding: .5rem 0.8rem;
+.li-ul-main a:hover {
+    /*border-bottom: 2px solid #164C2A!important;*/
+    color: #164C2A;
 }
 .li-ul-menu {
 	padding-bottom: 25px;
+}
+.nav-link-lateral {
+    padding: .5rem 0.8rem;
 }
 #main {
 	left: 120px;
@@ -115,6 +113,7 @@ i {
 }
 #section-home{
     height:auto;
+    min-height: 100vh;
     overflow:hidden;
    	border-bottom: 1px solid #dee2e6;
     background-color: green;
@@ -135,10 +134,12 @@ i {
 .texto-principal {
 	padding-top: 5rem!important;
 	padding-left: 5em;	
+    margin-top: 3rem!important;
 }
 .box-legend {
     background-color: #000000b3;
     padding: 1.5rem!important;
+    margin-top: 3rem!important;
 }
 .box-legend p{
     color: white;
@@ -328,6 +329,7 @@ section .my-auto h2 {
     .box-legend {
 	    padding-top: 50px !important;
 	    padding-bottom: 50px !important;
+        margin-top: 0rem!important;
 	}
     .texto-principal {
 	    padding-top: 0!important;
